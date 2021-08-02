@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        #box{
+            background-color: darkblue;
+            color: floralwhite;
+        }
+
+        .player{
+            background-color: orangered;
+            color: floralwhite;
+        }
+        /* ul li{
+            background-color: purple;
+        } */
+        .player span{
+            border: 2px solid black;
+        }
+        a{
+            background-color: chocolate;
+        }
+        a:link{
+            background-color: cornflowerblue;
+        }
+        a:visited{
+            background-color: cyan;
+        }
+        a:visited:hover{
+            background-color: yellowgreen;
+        }
+        a:hover{
+            background-color: violet;
+        }
+        p:first-line{
+            background-color: yellow;
+        }
+        .links li:before{
+            content: "click me : ";
+        }
+        .links li:after{
+            content: " >>> ";
+        }
+        h1,h2,h3,h4,h5,h6{
+            background-color: tomato;
+            color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        input:hover{
+            background-color: yellow;
+        }
+        input:focus{
+            background-color: tomato;
+        }
+        input:active{
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae beatae modi enim, hic adipisci! Expedita eaque error omnis accusantium, odio laboriosam eligendi! Dolor incidunt eos, molestiae provident inventore error.
+    </p>
+    <p id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae beatae modi enim, hic adipisci! Expedita eaque error omnis accusantium, odio laboriosam eligendi! Dolor incidunt eos, molestiae provident inventore error.
+    </p>
+    <span>
+        Span Tag
+    </span>
+    <p class="player">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span> Span Tag </span> Quae vitae beatae modi enim, hic adipisci! Expedita eaque error omnis accusantium, odio laboriosam eligendi! Dolor incidunt eos, molestiae provident inventore error.
+    </p>
+    <hr>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+    </ul>
+    <a>Plain Anchor Tag</a>
+    <br>
+    <a href="https://dell.com">External Link Tag</a>
+    <br>
+    <a href="#">Dummy Link Tag</a>
+    <br>
+    <a href="https://db.com/">Visited Link Tag</a>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta placeat numquam quibusdam aut! Alias aliquid in, facilis sunt dicta earum facere! Ratione minus impedit in perspiciatis at dolores quia?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta placeat numquam quibusdam aut! Alias aliquid in, facilis sunt dicta earum facere! Ratione minus impedit in perspiciatis at dolores quia?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta placeat numquam quibusdam aut! Alias aliquid in, facilis sunt dicta earum facere! Ratione minus impedit in perspiciatis at dolores quia?
+    </p>
+    <ul class="links">
+        <li>Link Item</li>
+        <li>Link Item</li>
+        <li>Link Item</li>
+        <li>Link Item</li>
+    </ul>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <hr>
+    <input type="text">
+    <br>
+    <br>
+    <input type="text">
+    <br>
+    <br>
+    <input type="text">
+</body>
+</html>

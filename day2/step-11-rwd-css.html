@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        media queries can be achieved with 
+        HTML, 
+        CSS, 
+        JavaScript
+    -->
+    <style>
+       /*  
+        @media only screen and (min-width:1000px) {
+            
+        }
+        @media only screen and (max-width:1000px) {
+            
+        }
+        @media screen and (orientation: landscape) {
+            
+        }
+        @media screen and (orientation: portrait) {
+            
+        } */
+        @media screen {
+            .container{
+                height: 600px;
+                background-color: cadetblue;
+                border: 1px solid transparent;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: 5px;
+                background-color: tomato;
+            }
+        }
+        @media screen and (min-width:1000px) {
+            .container{
+                height: 600px;
+                background-color: cadetblue;
+                border: 1px solid transparent;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: 5px;
+                background-color: tomato;
+            }
+            .box10{
+                background-color: indigo;
+            }
+        }
+        @media screen and (orientation:landscape) {
+            .container{
+                height: 600px;
+                background-color: cadetblue;
+                border: 1px solid transparent;
+            }
+        }
+        @media screen and (orientation:portrait) {
+            .container{
+                height: 600px;
+                background-color: lawngreen;
+                border: 1px solid transparent;
+            }
+        }
+        @media print {
+            .container{
+                height: 600px;
+                border: 1px solid black;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: 5px;
+                border: 2px solid black;
+            }
+        }
+    </style>
+
+    <script>
+        onload=function(){
+            setInterval(function(){
+                document.getElementById("log").textContent = innerWidth;
+            },100)
+        }
+    </script>
+</head>
+<body>
+   <h1>Width is : <span id="log"></span></h1>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+        <div class="box box10"></div>
+    </div>
+</body>
+</html>

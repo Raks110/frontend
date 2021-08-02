@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="lib/bootstrap.css"> -->
+
+    <style>
+        @import url("lib/bootstrap.css");
+
+        .btn-success{
+            color: #fff;
+            background-color: purple;
+            border-color: violet;
+         }
+        .btn-success:hover{
+            color: #fff;
+            background-color: yellow;
+            border-color: yellowgreen;
+         }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Input Name</th>
+                    <th>As rendered By Browser</th>
+                    <th>Value Entered</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Text </td>
+                    <td> <input oninput="inputHandler(this,'textop')" type="text"> </td>
+                    <td> <output id="textop"></output> </td>
+                </tr>
+                <tr>
+                    <td> Search </td>
+                    <td> <input oninput="inputHandler(this,'searchop')"  type="search"> </td>
+                    <td> <output id="searchop"></output> </td>
+                </tr>
+                <tr>
+                    <td> Color </td>
+                    <td> <input oninput="inputHandler(this,'colop')" type="color"> </td>
+                    <td> <output id="colop"></output> </td>
+                </tr>
+                <tr>
+                    <td> Number </td>
+                    <td> <input oninput="inputHandler(this,'numop')" type="number"> </td>
+                    <td> <output id="numop"></output> </td>
+                </tr>
+                <tr>
+                    <td> Range </td>
+                    <td> <input oninput="inputHandler(this,'rangeop')" type="range"> </td>
+                    <td> <output id="rangeop"></output> </td>
+                </tr>
+                <tr>
+                    <td> Date </td>
+                    <td> <input oninput="inputHandler(this,'dateop')" type="date"> </td>
+                    <td> <output id="dateop"></output> </td>
+                </tr>
+    <!--             <tr>
+                    <td> Date Time </td>
+                    <td> <input type="datetime"> </td>
+                    <td> <output></output> </td>
+                </tr> -->
+                <tr>
+                    <td> Date Time Local</td>
+                    <td> <input oninput="inputHandler(this,'datelocop')" type="datetime-local"> </td>
+                    <td> <output id="datelocop"></output> </td>
+                </tr>
+                <tr>
+                    <td> Week </td>
+                    <td> <input oninput="inputHandler(this,'weekop')" type="week"> </td>
+                    <td> <output id="weekop"></output> </td>
+                </tr>
+                <tr>
+                    <td> Month </td>
+                    <td> <input oninput="inputHandler(this,'monthop')" type="month"> </td>
+                    <td> <output id="monthop"></output> </td>
+                </tr>
+                <tr>
+                    <td> URL </td>
+                    <td> <input oninput="inputHandler(this,'urlop')" type="url"> </td>
+                    <td> <output id="urlop"></output> </td>
+                </tr>
+                <tr>
+                    <td> Telephone </td>
+                    <td> <input oninput="inputHandler(this,'telop')" type="tel"> </td>
+                    <td> <output id="telop"></output> </td>
+                </tr>
+                <tr>
+                    <td> eMail </td>
+                    <td> <input oninput="inputHandler(this,'mailop')" type="email"> </td>
+                    <td> <output id="mailop"></output> </td>
+                </tr>
+                <tr>
+                    <td colspan="3"> Output </td>
+                </tr>
+                <tr>
+                    <td> Progress </td>
+                    <td> <input min="0" max="1" step="0.1" oninput="inputHandler(this,'progop')" type="range"> </td>
+                    <td> <progress id="progop"></progress> </td>
+                </tr>
+                <tr>
+                    <td> Meter </td>
+                    <td><meter low="0.6" high="0.8" optimum="0.7" value="0.9"></meter> </td>
+                    <td><meter low="0.6" high="0.8" optimum="0.5" value="0.9"></meter> </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-light">Light</button>
+        <button class="btn btn-dark">Dark</button>
+        
+    </div>
+</body>
+</html>
